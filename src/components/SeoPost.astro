@@ -1,0 +1,83 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { SITE, SOCIAL_LINKS } from "@siteConfig";
+
+const { entry } = Astro.props;
+const post = entry as CollectionEntry<"blog">;
+---
+
+<title>
+  {post?.data.title ? `${post?.data.title} | ${SITE.title}` : SITE.title}
+</title>
+<meta
+  name="title"
+  content={post?.data.title
+    ? `${post?.data.title} | ${SITE.title}`
+    : SITE.title}
+/>
+<meta
+  name="description"
+  content={post?.data.description ? post?.data.description : SITE.description}
+/>
+<link rel="canonical" href={Astro.request.url} />
+
+<meta property="og:site_name" content={SITE.author} />
+<meta property="og:type" content="article" />
+<meta
+  property="og:title"
+  content={post?.data.title
+    ? `${post?.data.title} | ${SITE.title}`
+    : SITE.title}
+/>
+<meta
+  property="og:description"
+  content={post?.data.description ? post.data.description : SITE.description}
+/>
+<meta property="og:url" content={Astro.request.url} />
+<meta
+  property="og:image"
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
+/>
+<meta
+  property="og:image:width"
+  content={post?.data.image ? post.data.image.width.toString() : "1200"}
+/>
+<meta
+  property="og:image:height"
+  content={post?.data.image ? post.data.image.height.toString() : "630"}
+/>
+<meta
+  property="article:published_time"
+  content={post?.data.publicationDate
+    ? post.data.publicationDate.toISOString()
+    : ""}
+/>
+<meta
+  property="article:modified_time"
+  content={post?.data.editDate ? post.data.editDate.toISOString() : ""}
+/>
+{
+  post?.data.tags &&
+    post.data.tags.map((tag: string) => {
+      return <meta property="article:tag" content={tag} />;
+    })
+}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+  name="twitter:title"
+  content={post?.data.title ? post.data.title : SITE.title}
+/>
+<meta
+  name="twitter:description"
+  content={post?.data.description ? post.data.description : SITE.description}
+/>
+<meta name="twitter:url" content={Astro.request.url} />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content={SITE.author} />
+<meta name="twitter:site" content={SOCIAL_LINKS.twitter.url} />
+<meta name="twitter:creator" content={SOCIAL_LINKS.twitter.url} />
+<meta
+  property="twitter:image"
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
+/>

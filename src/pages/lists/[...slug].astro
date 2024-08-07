@@ -1,0 +1,35 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import SeoPost from "@components/SeoPost.astro";
+
+interface Props {
+  entry: CollectionEntry<"lists">;
+}
+
+export async function getStaticPaths() {
+  const list = await getCollection("lists");
+  return list.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout>
+  <SeoPost slot="head" entry={entry} />
+  <div>
+    <h1 class="mt-3">{entry.data.title}</h1>
+    <hr class="mb-6 mt-3 opacity-25" />
+    <div
+      class="content prose mx-auto dark:prose-invert prose-a:text-[#1800ED] dark:prose-a:text-[#9E9EFE]"
+    >
+      <Content />
+    </div>
+  </div>
+</BaseLayout>
