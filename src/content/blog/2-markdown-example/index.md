@@ -137,10 +137,10 @@ Use three hyphens \(\-\), asterisks \(\*\), or underscores \(\_\) to create a ho
 To create a link, the link text in brackets \(\[\]\) and then follow it immediately with the URL in parentheses \(\(\)\).
 
 ```md
-Micro is a fork of [astro-nano](https://github.com/markhorn-dev/astro-nano).
+[boogerbuttcheeks.com](https://boogerbuttcheeks.com)
 ```
 
-Micro is a fork of [astro-nano](https://github.com/markhorn-dev/astro-nano).
+[boogerbuttcheeks.com](https://boogerbuttcheeks.com)
 
 ---
 

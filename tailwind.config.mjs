@@ -33,7 +33,7 @@ export default {
         DEFAULT: {
           css: {
             code: {
-              fontFamily: "Intel One Mono",
+              fontFamily: "IntelOneMono",
             },
             "code::before": {
               content: '""',
