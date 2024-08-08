@@ -57,13 +57,15 @@
     --light-mode-background: 240 240 240;
     --light-mode-foreground: 0 0 0;
     --light-mode-foreground-muted: 50 50 50;
+    --light-mode-link: 24 0 237;
     --dark-mode-background: 10 10 10;
     --dark-mode-foreground: 255 255 255;
     --dark-mode-foreground-muted: 205 205 205;
+    --dark-mode-link: 158 158 254;
   }
 }
 
-* {
+body {
   background-color: light-dark(
     rgb(var(--light-mode-background)),
     rgb(var(--dark-mode-background))

@@ -31,6 +31,8 @@ video,
 canvas,
 svg {
   display: block;
+  vertical-align: middle;
+  height: auto;
   max-width: 100%;
 }
 /*

@@ -16,16 +16,33 @@ export default {
           "rgb(var(--light-mode-foreground) / <alpha-value>)",
         lightModeForegroundMuted:
           "rgb(var(--light-mode-foreground-muted) / <alpha-value>)",
+        lightModeLink: "rgb(var(--light-mode-link) / <alpha-value>)",
         darkModeBackground: "rgb(var(--dark-mode-background) / <alpha-value>)",
         darkModeForeground: "rgb(var(--dark-mode-foreground) / <alpha-value>)",
         darkModeForegroundMuted:
           "rgb(var(--dark-mode-foreground-muted) / <alpha-value>)",
+        darkModeLink: "rgb(var(--dark-mode-link) / <alpha-value>)",
       },
       fontFamily: {
         sans: "Verdana",
         ...defaultTheme.fontFamily.sans,
-        mono: "IntelOneMono",
+        mono: "Intel One Mono",
         ...defaultTheme.fontFamily.mono,
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            code: {
+              fontFamily: "Intel One Mono",
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+          },
+        },
       },
     },
   },
