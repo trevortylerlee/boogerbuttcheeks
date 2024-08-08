@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "boogerbuttcheeks",
   description:
-    "my name is boogerbuttcheeks. you called my father. prepare to die.",
+    "my name is boogerbuttcheeks. you killed my father. prepare to die.",
   url: "https://boogerbuttcheeks.com",
   author: "boogerbuttcheeks",
 };
