@@ -1,12 +1,12 @@
 ---
 title: "Desert Island: Mac Apps"
-description: I am stranded on a desert island and must choose which Mac apps I would bring.
+description: I am stranded on a desert island and must choose which Mac apps to bring.
 publicationDate: 2024/08/05
 ---
 
 ## 1. Raycast
 
-[Raycast](https://www.raycast.com/) is the app that's had the largest impact on my performance. Its like a GUI terminal. It has features baked in that [Sherlock](https://512pixels.net/2013/12/the-brushed-metal-diaries-sherlock/) other apps on the platform. The free version of Raycast includes functions like:
+[Raycast](https://www.raycast.com/) is like a GUI terminal. It has features baked in that [Sherlock](https://512pixels.net/2013/12/the-brushed-metal-diaries-sherlock/) other apps on the platform. The free version of Raycast includes functions like:
 
 - an app launcher
 - a clipboard manager

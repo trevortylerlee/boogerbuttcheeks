@@ -1,11 +1,12 @@
 ---
-title: My Favorite Video Games of All-Time
-description: Title is self-explanatory, no?
+title: My Favorite Video Games of All Time
+description: These games are pretty good.
 ---
 
 - Pokémon Blue (1996)
 - Star Wars Rogue Squadron III: Rebel Strike (2003)
 - NHL 06 (2005)
+- Wii Sports (2006)
 - Guitar Hero III: Legends of Rock (2007)
 - Plants vs. Zombies (2009)
 - God of War III (2010)
