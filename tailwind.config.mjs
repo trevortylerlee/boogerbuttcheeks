@@ -26,7 +26,7 @@ export default {
       fontFamily: {
         sans: "Verdana",
         ...defaultTheme.fontFamily.sans,
-        mono: "Intel One Mono",
+        mono: "IntelOneMono",
         ...defaultTheme.fontFamily.mono,
       },
       typography: {
