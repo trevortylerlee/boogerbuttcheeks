@@ -71,3 +71,7 @@ body {
     rgb(var(--dark-mode-background))
   );
 }
+
+hr {
+  @apply my-12 border-[0.5px];
+}

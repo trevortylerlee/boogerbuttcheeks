@@ -1,8 +1,18 @@
-import { defineCollection } from "astro:content";
-import { rssSchema } from "@astrojs/rss";
+import rss from "@astrojs/rss";
+import { getCollection } from "astro:content";
+import { SITE } from "@siteConfig";
 
-const blog = defineCollection({
-  schema: rssSchema,
-});
-
-export const collections = { blog };
+export async function GET(context) {
+  const blog = await getCollection("blog");
+  return rss({
+    title: SITE.title,
+    description: SITE.description,
+    site: context.site,
+    items: blog.map((post) => ({
+      title: post.data.title,
+      description: post.data.description,
+      pubDate: post.data.publicationDate,
+      link: `/blog/${post.slug}`,
+    })),
+  });
+}

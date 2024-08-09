@@ -15,37 +15,37 @@ export const SITE: SiteConfiguration = {
 export const NAV_LINKS: NavigationLinks = {
   about: {
     path: "/about",
-    title: "About",
+    label: "About",
   },
   blog: {
     path: "/blog",
-    title: "Blog",
+    label: "Blog",
   },
   contact: {
     path: "/contact",
-    title: "Contact",
+    label: "Contact",
   },
   lists: {
     path: "/lists",
-    title: "Lists",
+    label: "Lists",
   },
   themes: {
     path: "/themes",
-    title: "Themes",
+    label: "Themes",
   },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
   email: {
-    title: "Email",
+    label: "Email",
     url: "mailto:trevortylerlee@gmail.com",
   },
   github: {
-    title: "GitHub",
+    label: "GitHub",
     url: "https://github.com/trevortylerlee",
   },
   twitter: {
-    title: "Twitter",
+    label: "Twitter",
     url: "https://twitter.com/boogerbuttcheeks",
   },
 };

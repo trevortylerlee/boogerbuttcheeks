@@ -39,7 +39,7 @@ if (!postDescription) {
 />
 <meta
   property="og:image"
-  content={post?.data.image ? post.data.image : "/og.jpg"}
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
 />
 
 <!-- Twitter Meta Tags -->
@@ -53,7 +53,7 @@ if (!postDescription) {
 />
 <meta
   name="twitter:image"
-  content={post?.data.image ? post.data.image : "/og.jpg"}
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
 />
 
 {

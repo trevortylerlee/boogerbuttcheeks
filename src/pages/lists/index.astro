@@ -10,10 +10,10 @@ const posts = await getCollection("lists");
 
 <BaseLayout>
   <SeoPage slot="head" title="Blog" />
-  <ul class="list-none p-0">
+  <ul class="grid list-none gap-1 p-0">
     {
       posts.map((post) => (
-        <li class="mt-3">
+        <li>
           <a href={`/lists/${post.slug}`}>{post.data.title}</a>
         </li>
       ))

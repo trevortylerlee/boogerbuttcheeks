@@ -10,7 +10,7 @@ export type NavigationLinks = {
 };
 
 export type NavigationLink = {
-  title: string;
+  label: string;
   path: string;
 };
 
@@ -19,6 +19,6 @@ export type SocialLinks = {
 };
 
 export type SocialLink = {
-  title: string;
+  label: string;
   url: string;
 };

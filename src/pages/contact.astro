@@ -11,13 +11,13 @@ import { SOCIAL_LINKS } from "@siteConfig.ts";
   <SeoPage slot="head" title="Contact" />
   <main>
     <Introduction />
-    <ul class="list-none p-0">
+    <ul class="grid list-none gap-1 p-0">
       {
         Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
           return (
             <li>
               <a href={SOCIAL_LINKS[socialLinkKey].url}>
-                {SOCIAL_LINKS[socialLinkKey].title}
+                {SOCIAL_LINKS[socialLinkKey].label}
               </a>
             </li>
           );

@@ -5,13 +5,13 @@ import { NAV_LINKS, SITE, SOCIAL_LINKS } from "@siteConfig.ts";
 <header class="pb-8 sm:flex sm:items-center sm:justify-between">
   <a href="/" class="text-lg font-semibold sm:text-xl">{SITE.title}</a>
   <nav>
-    <ul class="flex list-none items-center gap-2 p-0 sm:gap-3">
+    <ul class="flex list-none flex-wrap items-center gap-x-2 p-0 sm:gap-3">
       {
         Object.keys(NAV_LINKS).map((navItemKey) => {
           return (
             <li>
               <a href={NAV_LINKS[navItemKey].path}>
-                {NAV_LINKS[navItemKey].title}
+                {NAV_LINKS[navItemKey].label}
               </a>
             </li>
           );

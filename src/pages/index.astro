@@ -16,7 +16,7 @@ const posts = (await getCollection("blog")).sort(
   <SeoPage slot="head" />
   <main>
     <Introduction />
-    <ul class="list-none p-0">
+    <ul class="grid list-none gap-1 p-0">
       {posts.map((post) => <Post post={post} />)}
     </ul>
   </main>
