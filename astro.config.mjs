@@ -3,7 +3,6 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
-import icon from "astro-icon";
 import expressiveCode, { ExpressiveCodeTheme } from "astro-expressive-code";
 
 import fs from "node:fs";
@@ -21,7 +20,6 @@ export default defineConfig({
   },
   site: "https://boogerbuttcheeks.com",
   integrations: [
-    icon(),
     tailwind(),
     sitemap(),
     expressiveCode({
