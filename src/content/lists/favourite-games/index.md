@@ -1,5 +1,5 @@
 ---
-title: My Favorite Video Games of All Time
+title: My Favourite Video Games of All Time
 description: These games are pretty good.
 ---
 

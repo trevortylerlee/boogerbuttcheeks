@@ -5,11 +5,15 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import SeoPage from "@components/SeoPage.astro";
 
-const posts = await getCollection("lists");
+const posts = (await getCollection("lists")).sort((a, b) =>
+  (a.data.title || "").localeCompare(b.data.title || "", undefined, {
+    sensitivity: "base",
+  }),
+);
 ---
 
 <BaseLayout>
-  <SeoPage slot="head" title="Blog" />
+  <SeoPage slot="head" title="Lists" />
   <ul class="grid list-none gap-1 p-0">
     {
       posts.map((post) => (
