@@ -27,4 +27,4 @@ const { title = SITE.title, description = SITE.description } = Astro.props;
 <meta property="twitter:url" content={Astro.request.url} />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content="/og.jpg" />
+<meta name="twitter:image" content=`${SITE.url}/og.jpg` />

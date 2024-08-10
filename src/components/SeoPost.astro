@@ -53,7 +53,7 @@ if (!postDescription) {
 />
 <meta
   name="twitter:image"
-  content={post?.data.image ? post.data.image.src : "/og.jpg"}
+  content={post?.data.image ? post.data.image.src : `${SITE.url}/og.jpg`}
 />
 
 {
