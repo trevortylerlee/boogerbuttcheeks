@@ -6,6 +6,9 @@ export default {
   corePlugins: {
     preflight: false,
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {

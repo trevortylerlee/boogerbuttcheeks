@@ -72,14 +72,6 @@ body {
   );
 }
 
-a {
-  @apply no-underline;
-}
-
-a:hover {
-  @apply underline;
-}
-
 hr {
   @apply my-12 border-[0.5px];
 }
