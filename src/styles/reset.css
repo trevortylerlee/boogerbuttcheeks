@@ -1,11 +1,12 @@
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
-  1. Use a more-intuitive box-sizing model.
+  1. Use a more-intuitive box-sizing model and stable scrolbar
 */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 /*
   2. Remove default margin

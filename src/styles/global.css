@@ -63,19 +63,19 @@
     --dark-mode-foreground-muted: 205 205 205;
     --dark-mode-link: 158 158 254;
   }
-}
 
-body {
-  background-color: light-dark(
-    rgb(var(--light-mode-background)),
-    rgb(var(--dark-mode-background))
-  );
-}
+  body {
+    background-color: light-dark(
+      rgb(var(--light-mode-background)),
+      rgb(var(--dark-mode-background))
+    );
+  }
 
-hr {
-  @apply my-12 border-[0.5px];
-}
+  hr {
+    @apply my-12 border-[0.5px];
+  }
 
-::selection {
-  @apply dark:bg-darkModeForeground/10 dark:text-green-400;
+  ::selection {
+    @apply dark:bg-darkModeForeground/10 dark:text-green-400;
+  }
 }
