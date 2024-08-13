@@ -2,6 +2,7 @@
 title: "My VS Code Setup"
 description: Walking through and explaining  my configuration files for Visual Studio Code.
 publicationDate: 2024/08/06
+lastUpdated: 2024/08/12
 ---
 
 ## Extensions
@@ -74,6 +75,7 @@ publicationDate: 2024/08/06
   "editor.snippetSuggestions": "top",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "javascript.experimental.updateImportsOnPaste": true,
   "security.workspace.trust.untrustedFiles": "open",
