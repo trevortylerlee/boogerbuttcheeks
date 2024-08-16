@@ -10,6 +10,7 @@ export const SITE: SiteConfiguration = {
     "my name is boogerbuttcheeks. you killed my father. prepare to die.",
   url: "https://boogerbuttcheeks.com",
   author: "boogerbuttcheeks",
+  locale: "en-CA",
 };
 
 export const NAV_LINKS: NavigationLinks = {
