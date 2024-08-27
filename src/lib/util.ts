@@ -1,4 +1,4 @@
-import { SITE } from "@siteConfig.ts";
+import { SITE } from "@/siteConfig.ts";
 
 export function formatDate(
   date: Date,
@@ -6,6 +6,8 @@ export function formatDate(
     year?: "numeric" | "2-digit";
     month?: "numeric" | "2-digit" | "long" | "short" | "narrow";
     day?: "numeric" | "2-digit";
+    hour?: "numeric" | "2-digit";
+    minute?: "numeric" | "2-digit";
   } = {},
   locale: string = SITE.locale,
 ): string {
@@ -13,6 +15,8 @@ export function formatDate(
     year: "numeric",
     month: "numeric",
     day: "numeric",
+    hour: undefined,
+    minute: undefined,
   };
 
   const formatOptions = { ...defaultOptions, ...options };

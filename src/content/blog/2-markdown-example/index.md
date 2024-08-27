@@ -1,7 +1,7 @@
 ---
 title: Markdown Syntax Example
 description: A page displaying common elements used in Markdown documents.
-publicationDate: 2024/08/07
+publicationDate: 2024-08-07T17:01:37.000Z
 ---
 
 ## Headings

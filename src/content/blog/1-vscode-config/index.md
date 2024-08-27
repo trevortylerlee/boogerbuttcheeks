@@ -1,8 +1,8 @@
 ---
 title: "My VS Code Setup"
 description: Walking through and explaining  my configuration files for Visual Studio Code.
-publicationDate: 2024/08/06
-lastUpdated: 2024/08/12
+publicationDate: 2024-08-06T20:25:45.000Z
+lastUpdated: 2024-08-12T16:12:07.000Z
 ---
 
 ## Extensions
