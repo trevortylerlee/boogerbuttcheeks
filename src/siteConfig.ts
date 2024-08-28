@@ -30,10 +30,6 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/lists",
     label: "Lists",
   },
-  themes: {
-    path: "/themes",
-    label: "Themes",
-  },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
