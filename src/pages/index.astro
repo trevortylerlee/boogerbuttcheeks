@@ -7,8 +7,14 @@ import Introduction from "@components/Introduction.astro";
 import Post from "@components/Post.astro";
 import SeoPage from "@components/SeoPage.astro";
 
-const posts = (await getCollection("blog")).sort(
+const blogPosts = (await getCollection("blog")).sort(
   (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
+);
+
+const lists = (await getCollection("lists")).sort((a, b) =>
+  (a.data.title || "").localeCompare(b.data.title || "", undefined, {
+    sensitivity: "base",
+  }),
 );
 ---
 
@@ -16,8 +22,22 @@ const posts = (await getCollection("blog")).sort(
   <SeoPage slot="head" />
   <main>
     <Introduction />
+    <h2 class="text-lg font-bold">Posts</h2>
     <ul class="grid list-none gap-1 p-0">
-      {posts.map((post) => <Post post={post} />)}
+      {blogPosts.map((post) => <Post post={post} />)}
+    </ul>
+
+    <br />
+
+    <h2 class="text-lg font-semibold">Lists</h2>
+    <ul class="grid list-none gap-1 p-0">
+      {
+        lists.map((list) => (
+          <li>
+            <a href={`/lists/${list.slug}`}>{list.data.title}</a>
+          </li>
+        ))
+      }
     </ul>
   </main>
 </BaseLayout>

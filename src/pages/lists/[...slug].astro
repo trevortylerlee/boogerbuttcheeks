@@ -32,7 +32,13 @@ const { Content } = await entry.render();
         <p class="text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
           Last updated:
           <span class="font-mono text-lightModeForeground dark:text-darkModeForeground">
-            {formatDate(entry.data.lastUpdated)}
+            {formatDate(entry.data.lastUpdated, {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
           </span>
         </p>
       )

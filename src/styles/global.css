@@ -72,7 +72,7 @@
   }
 
   hr {
-    @apply my-12 border-[0.5px];
+    @apply my-6 border-[0.5px];
   }
 
   ::selection {

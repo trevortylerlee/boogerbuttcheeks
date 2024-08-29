@@ -1,0 +1,60 @@
+---
+interface Item {
+  title: string;
+  imagePath: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul class="prose dark:prose-invert">
+  {
+    items.map((item) => (
+      <li
+        class="group relative cursor-default"
+        data-title={item.title}
+        data-image={item.imagePath}
+      >
+        <span>{item.title}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<div id="hover-image" class="pointer-events-none fixed z-50 hidden">
+  <img src="" alt="" class="w-32 object-cover" />
+</div>
+
+<script>
+  const hoverImage = document.getElementById("hover-image") as HTMLDivElement;
+  const hoverImageImg = hoverImage.querySelector("img") as HTMLImageElement;
+
+  function handleMouseMove(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    const listItem = target.closest("li");
+    if (listItem) {
+      const imagePath = listItem.getAttribute("data-image");
+      const title = listItem.getAttribute("data-title");
+      if (imagePath && title) {
+        hoverImageImg.src = imagePath;
+        hoverImageImg.alt = title;
+        hoverImage.style.left = `${event.clientX + 10}px`;
+        hoverImage.style.top = `${event.clientY + 10}px`;
+        hoverImage.classList.remove("hidden");
+      }
+    }
+  }
+
+  function handleMouseLeave() {
+    hoverImage.classList.add("hidden");
+  }
+
+  document.querySelectorAll("li").forEach((li) => {
+    li.addEventListener("mousemove", handleMouseMove);
+    li.addEventListener("mouseleave", handleMouseLeave);
+  });
+</script>

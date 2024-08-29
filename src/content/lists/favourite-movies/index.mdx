@@ -1,0 +1,60 @@
+---
+title: My Favourite Movies of All Time
+description: Good movies.
+lastUpdated: 2024-08-29T03:30:27.195Z
+---
+
+import Favourites from "../../../components/Favourites.astro";
+
+export const favouriteMovies = [
+  {
+    title: "The Godfather (1972)",
+    imagePath: "/movies/godfather.webp",
+  },
+  {
+    title: "The Godfather: Part II (1974)",
+    imagePath: "/movies/godfather-2.webp",
+  },
+  {
+    title: "Star Wars: Episode IV - A New Hope (1977)",
+    imagePath: "/movies/a-new-hope.webp",
+  },
+  {
+    title: "Star Wars: Episode V - The Empire Strikes Back (1980)",
+    imagePath: "/movies/the-empire-strikes-back.webp",
+  },
+  {
+    title: "The Lord of the Rings: The Fellowship of the Ring (2001)",
+    imagePath: "/movies/fellowship-of-the-ring.webp",
+  },
+  {
+    title: "The Lord of the Rings: The Two Towers (2002)",
+    imagePath: "/movies/the-two-towers.webp",
+  },
+  {
+    title: "The Lord of the Rings: The Return of the King (2003)",
+    imagePath: "/movies/return-of-the-king.webp",
+  },
+  {
+    title: "Star Wars: Episode I - The Phantom Menace (1999)",
+    imagePath: "/movies/the-phantom-menace.webp",
+  },
+  {
+    title: "Being John Malkovich (1999)",
+    imagePath: "/movies/being-john-malkovich.webp",
+  },
+  {
+    title: "Star Wars: Episode III - Revenge of the Sith (2005)",
+    imagePath: "/movies/revenge-of-the-sith.webp",
+  },
+  {
+    title: "Spider-Man: Into the Spider-Verse (2018)",
+    imagePath: "/movies/into-the-spider-verse.webp",
+  },
+  {
+    title: "Spider-Man: Across the Spider-Verse (2023)",
+    imagePath: "/movies/across-the-spider-verse.webp",
+  },
+];
+
+<Favourites items={favouriteMovies} />

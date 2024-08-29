@@ -1,6 +1,7 @@
 ---
 title: My Favourite Video Games of All Time
 description: These games are pretty good.
+lastUpdated: 2024-08-07T17:01:00.000Z
 ---
 
 - Pokémon Blue (1996)

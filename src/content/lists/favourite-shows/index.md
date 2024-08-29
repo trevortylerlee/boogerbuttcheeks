@@ -1,6 +1,7 @@
 ---
 title: My Favourite TV Shows of All Time
 description: These shows are pretty good.
+lastUpdated: 2024-08-10T03:41:00.000Z
 ---
 
 - Teen Titans (2003)
