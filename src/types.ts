@@ -4,6 +4,7 @@ export type SiteConfiguration = {
   url: string;
   author: string;
   locale: string;
+  timezone: string;
 };
 
 export type NavigationLinks = {

@@ -11,6 +11,7 @@ export const SITE: SiteConfiguration = {
   url: "https://boogerbuttcheeks.com",
   author: "boogerbuttcheeks",
   locale: "en-CA",
+  timezone: "America/Los_Angeles",
 };
 
 export const NAV_LINKS: NavigationLinks = {

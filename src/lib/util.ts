@@ -8,6 +8,7 @@ export function formatDate(
     day?: "numeric" | "2-digit";
     hour?: "numeric" | "2-digit";
     minute?: "numeric" | "2-digit";
+    timezone?: string;
   } = {},
   locale: string = SITE.locale,
 ): string {
@@ -17,6 +18,8 @@ export function formatDate(
     day: "numeric",
     hour: undefined,
     minute: undefined,
+    timeZone: SITE.timezone,
+    ...options,
   };
 
   const formatOptions = { ...defaultOptions, ...options };
