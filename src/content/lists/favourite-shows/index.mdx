@@ -1,0 +1,44 @@
+---
+title: My Favourite TV Shows of All Time
+description: These shows are pretty good.
+lastUpdated: 2024-09-03T07:46:49.290Z
+---
+
+import Favourites from "../../../components/Favourites.astro";
+
+export const favouriteShows = [
+  {
+    title: "Teen Titans (2003)",
+    imagePath: "/shows/teen-titans.webp",
+  },
+  {
+    title: "Avatar: The Last Airbender (2005)",
+    imagePath: "/shows/avatar-the-last-airbender.webp",
+  },
+  {
+    title: "It's Always Sunny in Philadelphia (2005)",
+    imagePath: "/shows/iasip.webp",
+  },
+  {
+    title: "Breaking Bad (2008)",
+    imagePath: "/shows/breaking-bad.webp",
+  },
+  {
+    title: "Fullmetal Alchemist: Brotherhood (2009)",
+    imagePath: "/shows/fullmetal-alchemist-brotherhood.webp",
+  },
+  {
+    title: "Rick and Morty (2013)",
+    imagePath: "/shows/rick-and-morty.webp",
+  },
+  {
+    title: "Over the Garden Wall (2014)",
+    imagePath: "/shows/over-the-garden-wall.webp",
+  },
+  {
+    title: "Stranger Things (2016)",
+    imagePath: "/shows/stranger-things.webp",
+  },
+];
+
+<Favourites items={favouriteShows} />
