@@ -2,7 +2,7 @@
 title: "Right Click with a Keyboard Shortcut"
 description: How to use BetterTouchTool to open the context menu with a keyboard shortcut.
 publicationDate: 2024-08-26T02:59:50.000Z
-lastUpdated: "2024-09-09T21:26:19.572"
+lastUpdated: 2024-09-10T04:37:11.924Z
 ---
 
 Did you know you can trigger a right click with a keyboard shortcut using BetterTouchTool?

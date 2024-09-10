@@ -1,7 +1,7 @@
 ---
 title: Convert images with Preview
 description: Quick shortcut to export images in different formats using Preview on macOS.
-publicationDate: "2024-09-09T21:10:16.587"
+publicationDate: 2024-09-10T04:37:47.715Z
 ---
 
 1. Open an image in Preview by selecting it in Finder and pressing <kbd>⌘ ↓</kbd>
