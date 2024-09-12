@@ -1,0 +1,130 @@
+---
+import Favicons from "@components/Favicons.astro";
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Brain dump</title>
+    <Favicons />
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <script>
+      import Konva from "konva";
+
+      // setup canvas
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const scaleBy = 1.1;
+
+      const stage = new Konva.Stage({
+        container: "container",
+        width: width,
+        height: height,
+        draggable: true,
+      });
+
+      // handle scroll
+      stage.on("wheel", (e) => {
+        e.evt.preventDefault();
+
+        const pointer = stage.getPointerPosition();
+        let direction = e.evt.deltaY > 0 ? -1 : 1;
+        let mousePointTo = { x: 0, y: 0 };
+        let previousScale = stage.scaleX();
+        let newScale =
+          direction > 0 ? previousScale * scaleBy : previousScale / scaleBy;
+
+        if (pointer) {
+          mousePointTo = {
+            x: (pointer.x - stage.x()) / previousScale,
+            y: (pointer.y - stage.y()) / previousScale,
+          };
+        }
+
+        if (pointer) {
+          const newPosition = {
+            x: pointer.x - mousePointTo.x * newScale,
+            y: pointer.y - mousePointTo.y * newScale,
+          };
+          stage.position(newPosition);
+        }
+
+        stage.scale({ x: newScale, y: newScale });
+      });
+
+      const layer = new Konva.Layer();
+      stage.add(layer);
+
+      // back to boogerbuttcheeks.com link
+      let backLink = new Konva.Text({
+        x: 20,
+        y: 20,
+        text: "← back to boogerbuttcheeks.com",
+        fontSize: 24,
+        fontFamily: "Verdana",
+        fill: "white",
+      });
+
+      backLink.on("click touchstart", () => {
+        window.location.href = "/";
+      });
+
+      backLink.on("mouseover touchstart", () => {
+        document.body.style.cursor = "pointer";
+      });
+
+      backLink.on("mouseout touchend", () => {
+        document.body.style.cursor = "default";
+      });
+
+      layer.add(backLink);
+
+      // draw nodes
+      let WIDTH = width;
+      let HEIGHT = height;
+
+      Konva.Image.fromURL("/brain-dump/1.webp", (image) => {
+        image.setAttrs({
+          x: WIDTH / 2,
+          y: HEIGHT / 2,
+          scaleX: 0.5,
+          scaleY: 0.5,
+        });
+        layer.add(image);
+      });
+
+      Konva.Image.fromURL("/brain-dump/2.webp", (image) => {
+        image.setAttrs({
+          x: WIDTH / 4,
+          y: HEIGHT / 4,
+          scaleX: 0.25,
+          scaleY: 0.25,
+        });
+        layer.add(image);
+      });
+
+      Konva.Image.fromURL("/brain-dump/3.webp", (image) => {
+        image.setAttrs({
+          x: WIDTH / 2.25,
+          y: HEIGHT / 7,
+          scaleX: 0.5,
+          scaleY: 0.5,
+        });
+        layer.add(image);
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+</style>
