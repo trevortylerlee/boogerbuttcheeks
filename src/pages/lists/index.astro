@@ -14,7 +14,8 @@ const posts = (await getCollection("lists")).sort((a, b) =>
 
 <BaseLayout>
   <SeoPage slot="head" title="Lists" />
-  <ul class="grid list-none gap-1 p-0">
+  <h2 class="py-3">Lists</h2>
+  <ul class="grid list-none gap-y-2 p-0">
     {
       posts.map((post) => (
         <li>

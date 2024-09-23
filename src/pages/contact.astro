@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-import Introduction from "@components/Introduction.astro";
 import SeoPage from "@components/SeoPage.astro";
 
 import { SOCIAL_LINKS } from "@siteConfig.ts";
@@ -10,8 +9,8 @@ import { SOCIAL_LINKS } from "@siteConfig.ts";
 <BaseLayout>
   <SeoPage slot="head" title="Contact" />
   <main>
-    <Introduction />
-    <ul class="grid list-none gap-1 p-0">
+    <h2 class="py-3">Contact</h2>
+    <ul class="grid list-none gap-y-2 p-0">
       {
         Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
           return (

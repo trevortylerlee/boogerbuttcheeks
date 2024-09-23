@@ -15,10 +15,6 @@ export const SITE: SiteConfiguration = {
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  about: {
-    path: "/about",
-    label: "About",
-  },
   blog: {
     path: "/blog",
     label: "Blog",

@@ -22,15 +22,13 @@ const lists = (await getCollection("lists")).sort((a, b) =>
   <SeoPage slot="head" />
   <main>
     <Introduction />
-    <h2 class="text-lg font-bold">Posts</h2>
-    <ul class="grid list-none gap-1 p-0">
+    <h2 class="py-3">Blog Posts</h2>
+    <ul class="grid list-none gap-y-2 p-0">
       {blogPosts.map((post) => <Post post={post} />)}
     </ul>
-
     <br />
-
-    <h2 class="text-lg font-semibold">Lists</h2>
-    <ul class="grid list-none gap-1 p-0">
+    <h2 class="py-3">Lists</h2>
+    <ul class="grid list-none gap-y-2 p-0">
       {
         lists.map((list) => (
           <li>
