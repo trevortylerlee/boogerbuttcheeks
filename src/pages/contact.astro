@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
-
-import SeoPage from "@components/SeoPage.astro";
+import { Icon } from "astro-icon/components";
 
 import { SOCIAL_LINKS } from "@siteConfig.ts";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPage from "@components/SeoPage.astro";
 ---
 
 <BaseLayout>
@@ -14,10 +14,14 @@ import { SOCIAL_LINKS } from "@siteConfig.ts";
       {
         Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
           return (
-            <li>
+            <li class="flex space-x-1">
               <a href={SOCIAL_LINKS[socialLinkKey].url}>
                 {SOCIAL_LINKS[socialLinkKey].label}
               </a>
+              <Icon
+                name="external"
+                class="prose inline-flex dark:prose-invert"
+              />
             </li>
           );
         })

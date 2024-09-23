@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import expressiveCode, { ExpressiveCodeTheme } from "astro-expressive-code";
 import fs from "node:fs";
 import mdx from "@astrojs/mdx";
+import icon from "astro-icon";
 const jsoncString = fs.readFileSync(new URL("public/ttl-theme.jsonc", import.meta.url), "utf-8");
 const ttlTheme = ExpressiveCodeTheme.fromJSONString(jsoncString);
 
@@ -21,5 +22,5 @@ export default defineConfig({
       codeFontFamily: "IntelOneMono",
       uiFontFamily: "Verdana"
     }
-  }), mdx()]
+  }), mdx(), icon()]
 });

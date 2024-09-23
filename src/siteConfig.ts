@@ -40,6 +40,6 @@ export const SOCIAL_LINKS: SocialLinks = {
   },
   twitter: {
     label: "Twitter",
-    url: "https://twitter.com/boogerbuttcheeks",
+    url: "https://twitter.com/boogerbuttcheek",
   },
 };
