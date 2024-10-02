@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon/components";
+
+import ButtonLink from "./ButtonLink.astro";
+---
+
+<div class="grid justify-center gap-y-3 py-6 text-center">
+  <span
+    class="text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >If you liked this...</span
+  >
+  <div class="flex gap-3">
+    <ButtonLink href="/">
+      Donate <Icon name="heart" />
+    </ButtonLink>
+
+    <ButtonLink href="https://twitter.com/boogerbuttcheek">
+      Twitter <Icon name="twitter" />
+    </ButtonLink>
+  </div>
+</div>

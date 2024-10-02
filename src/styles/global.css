@@ -71,10 +71,6 @@
     );
   }
 
-  hr {
-    @apply my-6 border-[0.5px];
-  }
-
   ::selection {
     @apply dark:bg-darkModeForeground/10 dark:text-green-400;
   }
