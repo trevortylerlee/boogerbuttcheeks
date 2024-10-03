@@ -28,7 +28,6 @@ const currentYear = new Date().getFullYear();
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
-    console.log("loaded");
     const buildTimeString = document.getElementById("build-time").dataset.time;
     const buildTime = new Date(buildTimeString);
 
@@ -43,8 +42,6 @@ const currentYear = new Date().getFullYear();
   function timeAgo(datePast, dateNow) {
     const seconds = Math.floor((dateNow - datePast) / 1000);
     let interval = Math.floor(seconds / 31536000);
-
-    console.log(interval);
 
     if (interval >= 1) {
       return interval + " year" + (interval === 1 ? "" : "s") + " ago";
