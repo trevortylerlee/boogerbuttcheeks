@@ -19,10 +19,6 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/blog",
     label: "Blog",
   },
-  contact: {
-    path: "/contact",
-    label: "Contact",
-  },
   lists: {
     path: "/lists",
     label: "Lists",
