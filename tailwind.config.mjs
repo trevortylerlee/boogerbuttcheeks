@@ -44,6 +44,24 @@ export default {
             "code::after": {
               content: '""',
             },
+            blockquote: {
+              borderLeft: "4px solid #00dd00",
+              padding: "0 1rem",
+              fontStyle: "normal",
+              quotes: "none",
+              "&::before": {
+                content: "none",
+              },
+              "&::after": {
+                content: "none",
+              },
+              "p:first-of-type::before": {
+                content: "none",
+              },
+              "p:last-of-type::after": {
+                content: "none",
+              },
+            },
           },
         },
       },
