@@ -5,22 +5,34 @@ import expressiveCode, { ExpressiveCodeTheme } from "astro-expressive-code";
 import fs from "node:fs";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
-const jsoncString = fs.readFileSync(new URL("public/ttl-theme.jsonc", import.meta.url), "utf-8");
+const jsoncString = fs.readFileSync(
+  new URL("public/ttl-theme.jsonc", import.meta.url),
+  "utf-8",
+);
 const ttlTheme = ExpressiveCodeTheme.fromJSONString(jsoncString);
-
 
 // https://astro.build/config
 export default defineConfig({
   server: {
-    port: 1999
+    port: 1999,
   },
   site: "https://boogerbuttcheeks.com",
-  integrations: [tailwind(), sitemap(), expressiveCode({
-    themes: [ttlTheme],
-    styleOverrides: {
-      borderRadius: "0",
-      codeFontFamily: "IntelOneMono",
-      uiFontFamily: "Verdana"
-    }
-  }), mdx(), icon()]
+  integrations: [
+    tailwind(),
+    sitemap({
+      customPages: [
+        "https://embed.figma.com/board/wCeNBPLYqQNpmwk0haQYbx/Untitled?node-id=0-1&embed-host=share",
+      ],
+    }),
+    expressiveCode({
+      themes: [ttlTheme],
+      styleOverrides: {
+        borderRadius: "0",
+        codeFontFamily: "IntelOneMono",
+        uiFontFamily: "Verdana",
+      },
+    }),
+    mdx(),
+    icon(),
+  ],
 });
