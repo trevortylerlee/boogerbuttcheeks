@@ -2,7 +2,7 @@
 title: "fastfetch"
 description: my fastfetch
 publicationDate: 2024-08-26T05:21:26.414Z
-lastUpdated: 2024-10-12T07:06:55.479Z
+lastUpdated: 2024-10-18T08:11:45.216Z
 ---
 
 ```bash
@@ -37,22 +37,25 @@ lastUpdated: 2024-10-12T07:06:55.479Z
              ...-:::::-...                  trevor@trevor-mint
           .-MMMMMMMMMMMMMMM-.               ------------------
       .-MMMM`..-:::::::-..`MMMM-.           OS: Linux Mint wilma 22 x86_64
-    .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:.         Kernel: Linux 6.8.0-45-generic
-   -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-        Uptime: 47 mins
- `:MMM:MM`  :MMMM:....::-...-MMMM:MMM:`     Packages: 2044 (dpkg)
+    .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:.         Kernel: Linux 6.8.0-47-generic
+   -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-        Uptime: 39 mins
+ `:MMM:MM`  :MMMM:....::-...-MMMM:MMM:`     Packages: 2061 (dpkg)
  :MMM:MMM`  :MM:`  ``    ``  `:MMM:MMM:     Shell: zsh 5.9
-.MMM.MMMM`  :MM.  -MM.  .MM-  `MMMM.MMM.    Display (LG HDR 4K): 2160x3840 @ 60 Hz in 31" [External]
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    WM: i3 (X11)
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM:MMM:    Theme: Yaru [GTK3]
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    Icons: Yaru [GTK3]
-.MMM.MMMM`  :MM:--:MM:--:MM:  `MMMM.MMM.    Cursor: Bibata-Modern-Classic
- :MMM:MMM-  `-MMMMMMMMMMMM-`  -MMM-MMM:     Terminal: WezTerm 20240203-110809-5046fc22
-  :MMM:MMM:`                `:MMM:MMM:      Terminal Font: JetBrains Mono
-   .MMM.MMMM:--------------:MMMM.MMM.       CPU: AMD FX(tm)-6300 (6) @ 3.50 GHz
-     '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'        GPU: NVIDIA GeForce GTX 750 Ti
-       '.-MMMM``--:::::--``MMMM-.'          Memory: 2.08 GiB / 15.52 GiB (13%)
-            '-MMMMMMMMMMMMM-'               Swap: 0 B / 2.00 GiB (0%)
-               ``-:::::-``                  Disk (/): 25.36 GiB / 233.16 GiB (11%) - ext4
-                                            Local IP (enp2s0): 10.0.0.118/24
+.MMM.MMMM`  :MM.  -MM.  .MM-  `MMMM.MMM.    Display (LG HDR 4K): 2160x3840 @ 60]
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    DE: Xfce4 4.18
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM:MMM:    WM: Xfwm4 (X11)
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    WM Theme: Default-xhdpi
+.MMM.MMMM`  :MM:--:MM:--:MM:  `MMMM.MMM.    Theme: Adwaita-dark [GTK2/3/4]
+ :MMM:MMM-  `-MMMMMMMMMMMM-`  -MMM-MMM:     Icons: Mint-L-Aqua [GTK2/3/4]
+  :MMM:MMM:`                `:MMM:MMM:      Font: Geist (10pt) [GTK2/3/4]
+   .MMM.MMMM:--------------:MMMM.MMM.       Cursor: Adwaita (48px)
+     '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'        Terminal: WezTerm 20240203-110809-52
+       '.-MMMM``--:::::--``MMMM-.'          Terminal Font: IntoneMono Nerd Font
+            '-MMMMMMMMMMMMM-'               CPU: AMD FX(tm)-6300 (6) @ 3.50 GHz
+               ``-:::::-``                  GPU: NVIDIA GeForce GTX 750 Ti
+                                            Memory: 3.29 GiB / 15.52 GiB (21%)
+                                            Swap: 0 B / 2.00 GiB (0%)
+                                            Disk (/): 12.73 GiB / 218.51 GiB (64
+                                            Local IP (enp2s0): 10.0.0.120/24
                                             Locale: en_CA.UTF-8
 ```
