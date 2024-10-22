@@ -2,7 +2,7 @@
 title: "fastfetch"
 description: my fastfetch
 publicationDate: 2024-08-26T05:21:26.414Z
-lastUpdated: 2024-10-18T08:11:45.216Z
+lastUpdated: 2024-10-22T05:37:30.679Z
 ---
 
 ```bash
@@ -34,28 +34,27 @@ lastUpdated: 2024-10-18T08:11:45.216Z
                                   Locale: en_CA.UTF-8
 ```
 ```bash
-             ...-:::::-...                  trevor@trevor-mint
-          .-MMMMMMMMMMMMMMM-.               ------------------
-      .-MMMM`..-:::::::-..`MMMM-.           OS: Linux Mint wilma 22 x86_64
-    .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:.         Kernel: Linux 6.8.0-47-generic
-   -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-        Uptime: 39 mins
- `:MMM:MM`  :MMMM:....::-...-MMMM:MMM:`     Packages: 2061 (dpkg)
- :MMM:MMM`  :MM:`  ``    ``  `:MMM:MMM:     Shell: zsh 5.9
-.MMM.MMMM`  :MM.  -MM.  .MM-  `MMMM.MMM.    Display (LG HDR 4K): 2160x3840 @ 60]
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    DE: Xfce4 4.18
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM:MMM:    WM: Xfwm4 (X11)
-:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    WM Theme: Default-xhdpi
-.MMM.MMMM`  :MM:--:MM:--:MM:  `MMMM.MMM.    Theme: Adwaita-dark [GTK2/3/4]
- :MMM:MMM-  `-MMMMMMMMMMMM-`  -MMM-MMM:     Icons: Mint-L-Aqua [GTK2/3/4]
-  :MMM:MMM:`                `:MMM:MMM:      Font: Geist (10pt) [GTK2/3/4]
-   .MMM.MMMM:--------------:MMMM.MMM.       Cursor: Adwaita (48px)
-     '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'        Terminal: WezTerm 20240203-110809-52
-       '.-MMMM``--:::::--``MMMM-.'          Terminal Font: IntoneMono Nerd Font
-            '-MMMMMMMMMMMMM-'               CPU: AMD FX(tm)-6300 (6) @ 3.50 GHz
-               ``-:::::-``                  GPU: NVIDIA GeForce GTX 750 Ti
-                                            Memory: 3.29 GiB / 15.52 GiB (21%)
-                                            Swap: 0 B / 2.00 GiB (0%)
-                                            Disk (/): 12.73 GiB / 218.51 GiB (64
-                                            Local IP (enp2s0): 10.0.0.120/24
-                                            Locale: en_CA.UTF-8
+/////////////                 trevor@trevor-pop-os
+/////////////////////             --------------------
+///////*767////////////////          OS: Pop!_OS jammy 22.04 x86_64
+//////7676767676*//////////////        Kernel: Linux 6.9.3-76060903-generic
+/////76767//7676767//////////////       Uptime: 12 mins
+/////767676///*76767///////////////      Packages: 1882 (dpkg), 13 (flatpak-user)
+///////767676///76767.///7676*///////     Shell: zsh 5.8.1
+/////////767676//76767///767676////////    Display (LG HDR 4K): 2160x3840 @ 60 Hz in 31" [External]
+//////////76767676767////76767/////////    DE: GNOME 42.9
+///////////76767676//////7676//////////    WM: Mutter (X11)
+////////////,7676,///////767///////////    WM Theme: Pop-dark
+/////////////*7676///////76////////////    Theme: Pop-dark [GTK2/3/4]
+///////////////7676////////////////////    Icons: Pop [GTK2/3/4]
+///////////////7676///767////////////     Font: Geist (10pt) [GTK2/3/4]
+//////////////////////'////////////      Cursor: Pop (24px)
+//////.7676767676767676767,//////       Terminal: WezTerm 20240203-110809-5046fc22
+/////767676767676767676767/////        CPU: AMD FX(tm)-6300 (6) @ 3.50 GHz
+///////////////////////////          GPU: NVIDIA GeForce GTX 750 Ti
+/////////////////////             Memory: 4.12 GiB / 15.52 GiB (27%)
+/////////////                 Swap: 0 B / 19.52 GiB (0%)
+                              Disk (/): 16.02 GiB / 215.06 GiB (7%) - ext4
+                              Local IP (enp2s0): 10.0.0.120/24
+                              Locale: en_US.UTF-8
 ```
