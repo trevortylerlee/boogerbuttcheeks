@@ -1,14 +1,15 @@
 ---
 import { getCollection } from "astro:content";
 
+import { formatBlogPosts } from "@lib/util";
+
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Introduction from "@/components/Introduction.astro";
 import Post from "@/components/Post.astro";
 import SeoPage from "@/components/SeoPage.astro";
 
-const blogPosts = (await getCollection("blog")).sort(
-  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
-);
+const blogPosts = await getCollection("blog");
+const formattedBlogPosts = formatBlogPosts(blogPosts);
 
 const lists = (await getCollection("lists")).sort((a, b) =>
   (a.data.title || "").localeCompare(b.data.title || "", undefined, {
@@ -23,7 +24,7 @@ const lists = (await getCollection("lists")).sort((a, b) =>
     <Introduction />
     <h2 class="py-3">Blog Posts</h2>
     <ul class="grid list-none gap-y-2 p-0">
-      {blogPosts.map((post) => <Post post={post} />)}
+      {formattedBlogPosts.map((post) => <Post post={post} />)}
     </ul>
     <br />
     <h2 class="py-3">Lists</h2>

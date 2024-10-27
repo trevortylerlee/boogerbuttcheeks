@@ -1,13 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 
+import { formatBlogPosts } from "@lib/util";
+
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Post from "@/components/Post.astro";
 import SeoPage from "@/components/SeoPage.astro";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
-);
+const posts = await getCollection("blog");
+const formattedPosts = formatBlogPosts(posts);
 ---
 
 <BaseLayout>
@@ -15,7 +16,7 @@ const posts = (await getCollection("blog")).sort(
   <main class="mb-12">
     <h2 class="py-3">Blog Posts</h2>
     <ul class="grid list-none gap-y-2 p-0">
-      {posts.map((post) => <Post post={post} />)}
+      {formattedPosts.map((post) => <Post post={post} />)}
     </ul>
   </main>
 </BaseLayout>
