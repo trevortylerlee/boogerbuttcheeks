@@ -1,8 +1,7 @@
 ---
 title: "My Workflow: Keyboard"
 description: In the first installment of the "My Workflow" series I talk about my keyboard and how I use VIA to make it perfect for my needs.
-draft: true
-publicationDate: 2024-10-28T01:33:45Z
+publicationDate: 2024-10-28T03:56:17Z
 ---
 
 I use a KBD67 Lite R3 (Model KBD67MKIIRGBV3) keyboard. It's a 65% keyboard layout that's hotswappable and comes with USB C. I have GMK CYL Dots 2 Light keycaps, which I enjoy because they're legendless. This means I'm free to experiment with swapping around keys in software and don't have to worry about the physical keycaps not matching. I use HMX Hyacinth linear switches on my stabilized keys and Cherry Browns everywhere else.
