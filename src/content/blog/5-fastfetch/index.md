@@ -2,11 +2,10 @@
 title: "fastfetch"
 description: my fastfetch
 publicationDate: 2024-08-26T05:21:26.414Z
-lastUpdated: 2024-10-22T05:37:30.679Z
+lastUpdated: 2024-10-30T01:44:49Z
 ---
 
 ```bash
-❯ fastfetch
                      ..'          trevorlee@Trevors-MacBook-Air
                  ,xNMM.           -----------------------------
                .OMMMMo            OS: macOS Sonoma 14.6.1 arm64
@@ -57,4 +56,24 @@ lastUpdated: 2024-10-22T05:37:30.679Z
                               Disk (/): 16.02 GiB / 215.06 GiB (7%) - ext4
                               Local IP (enp2s0): 10.0.0.120/24
                               Locale: en_US.UTF-8
+```
+
+```bash
+_,met$$$$$gg.          pi-nas@pi-nas
+,g$$$$$$$$$$$$$$$P.       -------------
+,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12 (bookworm) aarch64
+,$$P'              `$$$.     Host: Raspberry Pi 5 Model B Rev 1.0
+',$$P       ,ggs.     `$$b:   Kernel: 6.6.51+rpt-rpi-2712
+`d$$'     ,$P"'   .    $$$    Uptime: 21 hours, 29 mins
+$$P      d$'     ,    $$P    Packages: 735 (dpkg)
+$$:      $$.   -    ,d$$'    Shell: bash 5.2.15
+$$;      Y$b._   _,d$P'      Terminal: /dev/pts/0
+Y$$.    `.`"Y$$$$P"'         CPU: (4) @ 2.400GHz
+`$$b      "-.__              Memory: 153MiB / 8052MiB
+`Y$$
+`Y$$.
+`$$b.
+`Y$$b.
+   `"Y$b._
+       `"""
 ```
