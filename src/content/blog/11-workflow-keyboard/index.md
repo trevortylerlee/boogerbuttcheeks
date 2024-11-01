@@ -12,7 +12,7 @@ My VIA configuration uses 3 layers. [Download link](/files/kbd67.layout.json)
 
 ### Layer 0
 
-![Layer 0](./layer-0.jpg)
+![Layer 0](./layer-0.webp)
 
 - <kbd>Caps Lock</kbd> now acts as <kbd>Esc</kbd> when tapped and <kbd>LCtrl</kbd> when held. Here's how you [set up this behaviour with VIA](/10-mod-tap-with-via).
 - Swapped <kbd>LWin</kbd> with <kbd>LAlt</kbd>.
@@ -24,7 +24,7 @@ My VIA configuration uses 3 layers. [Download link](/files/kbd67.layout.json)
 
 ### Layer 1
 
-![Layer 1](./layer-1.jpg)
+![Layer 1](./layer-1.webp)
 
 This layer is active when <kbd>Fn1</kbd> on `Layer 0` is held down. Notable features:
 
@@ -35,6 +35,6 @@ This layer is active when <kbd>Fn1</kbd> on `Layer 0` is held down. Notable feat
 
 ### Layer 2
 
-![Layer 2](./layer-2.jpg)
+![Layer 2](./layer-2.webp)
 
 Active when <kbd>Space</kbd> on `layer 0` is held down. This is a layer specifically for moving the arrow keys to the H, J, K, and L keys. I use it all the time in Finder...
